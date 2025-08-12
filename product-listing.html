@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body class="!bg-white">
+    <div class="custom_modal">
+        <div class="custom_modal_dialog">
+            <div class="custom_modal_content">
+                <a class="close_modal">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+                <div class="show_item">
+                    <div class="img">
+                        <img src="Asstes/ProductListing/sleeping4.png" alt="Sleeping">
+                    </div>
+                    <div class="text">
+                        <p>Redondo Upholstered Wood Baby Crib with Toddler Bed Rail</p>
+                    </div>
+                </div>
+                <div class="add_to_cart_section">
+                    <div class="logo">
+                        <img src="Asstes/ProductListing/logoBlack.png" alt="Logo">
+                        <span>CA$69.99</span>
+                    </div>
+                    <button>Add to Cart</button>
+                    <p>
+                        <span>Estimated Delivery</span>
+                        Friday May 2 - Thursday May 8
+                    </p>
+                </div>
+                <div class="other_buying_option">
+                    <h4>View other Buying options
+                        <span class="other_buying_open"><i class="fa-solid fa-angle-down"></i></span>
+                    </h4>
+                    <div class="other_buying_inner">
+                        <div class="amazon">
+                            <img src="Asstes/ProductListing/amazon.png" alt="Amazon">
+                            <span>Amazon</span>
+                        </div>
+                        <div class="buy_wrap">
+                            <span>CA$59.99</span>
+                            <a>Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center gap-x-[7px]">
+                    <input type="checkbox" id="mark_purchased">
+                    <label class="text-[#474747] text-sm leading-[17px] " for="mark_purchased">Mark
+                        as Purchased</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="md:bg-[#F3F3F3] bg-white py-[22px] mb-[30px] product_listing_banner">
+        <div class="container relative">
+            <a href="#"
+                class="bg-[#FFFFFF] rounded-[100px] inline-flex items-center gap-x-[16px] text-[#1E1E1E] font-bold text-[20px] py-[8px] px-[25px] absolute top-0 right-[10px] share_btn">
+                <span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 8L8 11" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" />
+                        <path d="M16 16L8 13" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M6 14C7.10457 14 8 13.1046 8 12C8 10.8954 7.10457 10 6 10C4.89543 10 4 10.8954 4 12C4 13.1046 4.89543 14 6 14Z"
+                            stroke="#1E1E1E" stroke-width="2" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18 9C19.1046 9 20 8.10457 20 7C20 5.89543 19.1046 5 18 5C16.8954 5 16 5.89543 16 7C16 8.10457 16.8954 9 18 9Z"
+                            stroke="#1E1E1E" stroke-width="2" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18 19C19.1046 19 20 18.1046 20 17C20 15.8954 19.1046 15 18 15C16.8954 15 16 15.8954 16 17C16 18.1046 16.8954 19 18 19Z"
+                            stroke="#1E1E1E" stroke-width="2" />
+                    </svg>
+                </span>
+                <span>Share</span>
+            </a>
+            <div class="flex items-center gap-x-[48px] banner_inner">
+                <div class="img">
+                    <img src="Asstes/ProductListing/listingBannerImg.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-[#1E1E1E] font-bold text-[32px] leading-[38px] mb-[20px]">Johnathon & Lee Mathew’s
+                        Baby Registry</h1>
+                    <ul class="flex items-center gap-x-[20px]">
+                        <li class="flex items-center gap-x-[10px] text-[#1E1E1E] font-medium text-base">
+                            <span class="">
+                                <svg width="11" height="15" viewBox="0 0 11 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M5.50033 4.72917C6.07772 4.72917 6.63147 4.4998 7.03976 4.09151C7.44804 3.68323 7.67741 3.12948 7.67741 2.55208C7.67741 1.97468 7.44804 1.42094 7.03976 1.01265C6.63147 0.604371 6.07772 0.375 5.50033 0.375C4.92293 0.375 4.36918 0.604371 3.9609 1.01265C3.55261 1.42094 3.32324 1.97468 3.32324 2.55208C3.32324 3.12948 3.55261 3.68323 3.9609 4.09151C4.36918 4.4998 4.92293 4.72917 5.50033 4.72917ZM5.50033 3.9375C5.86776 3.9375 6.22015 3.79154 6.47996 3.53172C6.73978 3.2719 6.88574 2.91952 6.88574 2.55208C6.88574 2.18465 6.73978 1.83226 6.47996 1.57245C6.22015 1.31263 5.86776 1.16667 5.50033 1.16667C5.13289 1.16667 4.7805 1.31263 4.52069 1.57245C4.26087 1.83226 4.11491 2.18465 4.11491 2.55208C4.11491 2.91952 4.26087 3.2719 4.52069 3.53172C4.7805 3.79154 5.13289 3.9375 5.50033 3.9375ZM3.12533 9.45542C3.12533 9.50397 3.12968 9.55583 3.13839 9.61098C2.40491 10.2404 1.93783 11.1626 1.93783 12.1934C1.93783 12.5722 2.01303 13.139 2.22956 13.6263C2.4437 14.1092 2.85616 14.625 3.56549 14.625C4.25622 14.625 4.84087 14.0815 4.84087 13.3809C4.84087 13.0828 4.72093 12.8255 4.63978 12.651L4.62791 12.6256C4.53489 12.4238 4.48897 12.3098 4.48897 12.1934C4.48897 12.079 4.55468 11.8882 4.69718 11.6693C4.78031 11.5426 4.87451 11.4286 4.96397 11.3388C5.14962 11.4104 5.3321 11.4583 5.50033 11.4583C5.66935 11.4583 5.85143 11.4108 6.03708 11.3388C6.12653 11.4286 6.22074 11.5423 6.30387 11.6693C6.44637 11.8882 6.51208 12.079 6.51208 12.1934C6.51208 12.3066 6.46616 12.423 6.37195 12.6288L6.36008 12.6553C6.27933 12.8303 6.16018 13.0892 6.16018 13.3809C6.16018 14.0815 6.74483 14.625 7.43555 14.625C8.14291 14.625 8.55101 14.0752 8.7616 13.5998C8.9793 13.1094 9.06322 12.5445 9.06322 12.1934C9.06322 11.1626 8.59614 10.2408 7.86266 9.61098C7.8711 9.55609 7.87533 9.50424 7.87533 9.45542V7.42123C8.03234 7.39035 8.1916 7.35671 8.3531 7.32029C8.69664 7.24201 9.03833 7.15583 9.37791 7.06181C9.52829 7.02049 9.66906 6.94995 9.79218 6.85422C9.9153 6.75849 10.0184 6.63945 10.0955 6.50389C10.1726 6.36833 10.2223 6.21891 10.2416 6.06416C10.261 5.90941 10.2497 5.75236 10.2084 5.60198C10.167 5.4516 10.0965 5.31083 10.0008 5.18771C9.90504 5.06458 9.786 4.96152 9.65044 4.88441C9.37667 4.72867 9.05225 4.68806 8.74853 4.77152C7.41656 5.13767 6.44478 5.29283 5.50547 5.28888C4.56181 5.28492 3.58568 5.12025 2.23866 4.76796C1.93558 4.69288 1.61512 4.74019 1.34667 4.89966C1.07822 5.05912 0.883376 5.31789 0.80432 5.61996C0.725265 5.92203 0.768361 6.24307 0.924278 6.5136C1.0802 6.78412 1.33639 6.98236 1.63739 7.06538C2.16108 7.20233 2.6527 7.31871 3.12572 7.41094L3.12533 9.45542ZM9.07391 6.32438L9.16812 6.29825C9.26727 6.26864 9.35089 6.20139 9.40106 6.11088C9.45124 6.02038 9.46397 5.91382 9.43654 5.81404C9.40911 5.71426 9.3437 5.62919 9.25432 5.57705C9.16493 5.52491 9.05868 5.50984 8.95833 5.53508C7.58676 5.91192 6.53899 6.08529 5.5023 6.08054C4.46403 6.07658 3.41468 5.89371 2.03837 5.5339C1.93787 5.51027 1.83212 5.52684 1.74367 5.58007C1.65522 5.6333 1.59106 5.71899 1.56488 5.81885C1.5387 5.91871 1.55257 6.02485 1.60354 6.11463C1.6545 6.20441 1.73852 6.27072 1.83768 6.29944C2.47022 6.46529 3.04497 6.59631 3.58964 6.69171C3.68142 6.70773 3.76461 6.75562 3.82456 6.82694C3.88451 6.89826 3.91738 6.98844 3.91739 7.0816V8.29167H7.08405V7.09229C7.08406 6.99912 7.11694 6.90894 7.17689 6.83763C7.23684 6.76631 7.32002 6.71842 7.41181 6.7024C7.97146 6.60173 8.52621 6.47546 9.0743 6.32398M2.72989 12.193C2.72989 11.494 3.01093 10.8551 3.47603 10.3785C3.66891 10.6391 3.92227 10.8488 4.21426 10.9897C4.14987 11.0694 4.08997 11.1516 4.03456 11.2363C3.8596 11.5039 3.69731 11.8514 3.69731 12.193C3.69731 12.5002 3.81883 12.7614 3.90116 12.9395L3.90987 12.9581C4.00487 13.1636 4.0492 13.272 4.0492 13.3805C4.0492 13.6168 3.84614 13.8329 3.56549 13.8329C3.31968 13.8329 3.11583 13.6706 2.95314 13.3045C2.79283 12.9443 2.72989 12.493 2.72989 12.193ZM6.9661 11.2363C6.91019 11.1512 6.85022 11.0689 6.78639 10.9897C7.07838 10.8488 7.33174 10.6391 7.52462 10.3785C7.98972 10.8555 8.27116 11.494 8.27116 12.193C8.27116 12.4511 8.20387 12.9039 8.03762 13.2788C7.86424 13.6691 7.65643 13.8329 7.43516 13.8329C7.15412 13.8329 6.95145 13.6168 6.95145 13.3805C6.95145 13.2772 6.99539 13.1675 7.09158 12.9574L7.10028 12.9388C7.18222 12.7594 7.30335 12.4954 7.30335 12.193C7.30335 11.8514 7.14105 11.5039 6.9661 11.2363ZM6.3486 10.4102C6.90276 10.1992 7.08326 9.75942 7.08326 9.58802V9.06354H3.9166V9.58842C3.9166 9.75981 4.0971 10.1996 4.65166 10.4106C4.71499 10.4343 4.78624 10.4648 4.85037 10.4921L4.88797 10.5079C4.96674 10.5412 5.04274 10.5725 5.11993 10.6006C5.28064 10.6588 5.40612 10.6865 5.49993 10.6865C5.59374 10.6865 5.71922 10.6588 5.87993 10.6006C5.95712 10.5729 6.03312 10.5412 6.11189 10.5079L6.14949 10.4921M6.3486 10.4106C6.28526 10.4343 6.21401 10.4648 6.14949 10.4921L6.3486 10.4106Z"
+                                        fill="#1E1E1E" />
+                                </svg>
+                            </span>
+                            Baby Shower
+                        </li>
+                        <li class="flex items-center gap-x-[10px] text-[#1E1E1E] font-medium text-base">
+                            <span class="">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.1875 2.5H10.3125V1.5625C10.3125 1.47962 10.2796 1.40013 10.221 1.34153C10.1624 1.28292 10.0829 1.25 10 1.25C9.91712 1.25 9.83763 1.28292 9.77903 1.34153C9.72042 1.40013 9.6875 1.47962 9.6875 1.5625V2.5H5.3125V1.5625C5.3125 1.47962 5.27958 1.40013 5.22097 1.34153C5.16237 1.28292 5.08288 1.25 5 1.25C4.91712 1.25 4.83763 1.28292 4.77903 1.34153C4.72042 1.40013 4.6875 1.47962 4.6875 1.5625V2.5H2.8125C2.39825 2.5005 2.00111 2.66528 1.70819 2.95819C1.41528 3.25111 1.2505 3.64825 1.25 4.0625V12.1875C1.2505 12.6017 1.41528 12.9989 1.70819 13.2918C2.00111 13.5847 2.39825 13.7495 2.8125 13.75H12.1875C12.6019 13.75 12.9993 13.5854 13.2924 13.2924C13.5854 12.9993 13.75 12.6019 13.75 12.1875V4.0625C13.75 3.6481 13.5854 3.25067 13.2924 2.95765C12.9993 2.66462 12.6019 2.5 12.1875 2.5ZM13.125 12.1875C13.125 12.4361 13.0262 12.6746 12.8504 12.8504C12.6746 13.0262 12.4361 13.125 12.1875 13.125H2.8125C2.56386 13.125 2.3254 13.0262 2.14959 12.8504C1.97377 12.6746 1.875 12.4361 1.875 12.1875V6.875H13.125V12.1875ZM13.125 6.25H1.875V4.0625C1.875 3.545 2.29375 3.125 2.8125 3.125H4.6875V4.0625C4.6875 4.14538 4.72042 4.22487 4.77903 4.28347C4.83763 4.34208 4.91712 4.375 5 4.375C5.08288 4.375 5.16237 4.34208 5.22097 4.28347C5.27958 4.22487 5.3125 4.14538 5.3125 4.0625V3.125H9.6875V4.0625C9.6875 4.14538 9.72042 4.22487 9.77903 4.28347C9.83763 4.34208 9.91712 4.375 10 4.375C10.0829 4.375 10.1624 4.34208 10.221 4.28347C10.2796 4.22487 10.3125 4.14538 10.3125 4.0625V3.125H12.1875C12.4361 3.125 12.6746 3.22377 12.8504 3.39959C13.0262 3.5754 13.125 3.81386 13.125 4.0625V6.25Z"
+                                        fill="#1E1E1E" />
+                                </svg>
+                            </span>
+                            12/09/2024
+                        </li>
+                        <li class="flex items-center gap-x-[10px] text-[#1E1E1E] font-medium text-base">
+                            <span class="">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.4375 3.73828C7.06666 3.73828 6.70415 3.84825 6.39581 4.05428C6.08746 4.2603 5.84714 4.55314 5.70523 4.89575C5.56331 5.23836 5.52618 5.61536 5.59853 5.97908C5.67088 6.34279 5.84945 6.67688 6.11168 6.93911C6.3739 7.20133 6.70799 7.37991 7.07171 7.45225C7.43542 7.5246 7.81242 7.48747 8.15503 7.34556C8.49764 7.20364 8.79048 6.96332 8.99651 6.65498C9.20253 6.34663 9.3125 5.98412 9.3125 5.61328C9.31194 5.11617 9.11421 4.63959 8.7627 4.28808C8.41119 3.93657 7.93461 3.73885 7.4375 3.73828ZM7.4375 6.55078C7.25208 6.55078 7.07082 6.4958 6.91665 6.39278C6.76248 6.28977 6.64232 6.14335 6.57136 5.97205C6.50041 5.80074 6.48184 5.61224 6.51801 5.43038C6.55419 5.24853 6.64348 5.08148 6.77459 4.95037C6.9057 4.81926 7.07275 4.72997 7.2546 4.69379C7.43646 4.65762 7.62496 4.67619 7.79627 4.74714C7.96757 4.8181 8.11399 4.93826 8.217 5.09243C8.32002 5.24661 8.375 5.42786 8.375 5.61328C8.37471 5.86183 8.27585 6.10012 8.1001 6.27588C7.92434 6.45163 7.68605 6.55049 7.4375 6.55078Z"
+                                        fill="#1E1E1E" />
+                                    <path
+                                        d="M11.0416 2.00757C10.1508 1.11696 8.96165 0.5879 7.70367 0.522501C6.44569 0.457103 5.20808 0.860003 4.22969 1.65344C3.25131 2.44688 2.6015 3.5746 2.4057 4.81897C2.20989 6.06333 2.48196 7.33612 3.1694 8.39168L6.7116 13.8296C6.79043 13.9506 6.89821 14.05 7.02518 14.1188C7.15214 14.1876 7.29427 14.2236 7.43868 14.2236C7.58309 14.2236 7.72522 14.1876 7.85218 14.1188C7.97914 14.05 8.08692 13.9506 8.16575 13.8296L11.7081 8.39168C12.3459 7.4125 12.6278 6.24381 12.5065 5.0815C12.3852 3.91919 11.868 2.83391 11.0416 2.00757ZM10.9226 7.87996L7.43869 13.2281L3.95479 7.87996C2.88839 6.24288 3.11711 4.05205 4.49863 2.67047C4.88472 2.28437 5.34308 1.9781 5.84754 1.76914C6.35199 1.56019 6.89267 1.45264 7.43869 1.45264C7.98471 1.45264 8.52539 1.56019 9.02984 1.76914C9.5343 1.9781 9.99266 2.28437 10.3787 2.67047C11.7603 4.05205 11.989 6.24288 10.9226 7.87996Z"
+                                        fill="#1E1E1E" />
+                                </svg>
+                            </span>
+                            Toronto
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    </section>
+    <section class="mb-8 bg-white">
+        <div class="container">
+            <div class="tabs_main_wrapper">
+                <div class="tabs_wrapper">
+                    <ul class="flex items-center gap-x-[12px] mb-[20px]">
+                        <li>
+                            <a class="text-[#343434] font-semibold text-[20px] leading-[24px] py-[7px] px-[20px] text-center border border-[#D8D8D8] cursor-pointer active all_tab_menu tab_link"
+                                data-tab="all">All
+                                (34)</a>
+                        </li>
+                        <li>
+                            <a class="text-[#343434] font-semibold text-[20px] leading-[24px] py-[7px] px-[20px] text-center border border-[#D8D8D8] cursor-pointer sleeping_tab_menu tab_link"
+                                data-tab="Sleeping">Sleeping
+                                (10)</a>
+                        </li>
+                        <li>
+                            <a class="text-[#343434] font-semibold text-[20px] leading-[24px] py-[7px] px-[20px] text-center border border-[#D8D8D8] cursor-pointer playing_tab_menu tab_link"
+                                data-tab="Playing">Playing
+                                (10)</a>
+                        </li>
+                        <li>
+                            <a class="text-[#343434] font-semibold text-[20px] leading-[24px] py-[7px] px-[20px] text-center border border-[#D8D8D8] cursor-pointer health_tab_menu tab_link"
+                                data-tab="Health">Health
+                                & Safety (10)</a>
+                        </li>
+                        <li>
+                            <a class="text-[#343434] font-semibold text-[20px] leading-[24px] py-[7px] px-[20px] text-center border border-[#D8D8D8] cursor-pointer hiapering_tab_menu tab_link"
+                                data-tab="Diapering">Diapering
+                                (10)</a>
+                        </li>
+                        <li>
+                            <a class="text-[#343434] font-semibold text-[20px] leading-[24px] py-[7px] px-[20px] text-center border border-[#D8D8D8] cursor-pointer health_tab_menu tab_link"
+                                data-tab="Health">Health
+                                & Safety (10)</a>
+                        </li>
+                        <li>
+                            <a class="text-[#343434] font-semibold text-[20px] leading-[24px] py-[7px] px-[20px] text-center border border-[#D8D8D8] cursor-pointer sleeping_tab_menu tab_link"
+                                data-tab="Sleeping">Sleeping
+                                (10)</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter flex justify-end">
+                    <span class="text-[#696969] font-semibold md:text-[20px] text-[16px] leading-[24px]">Sort : </span>
+                    <select class="text-[#1E1E1E] font-semibold md:text-[20px] text-[16px] leading-[24px] outline-0">
+                        <option value="">Category</option>
+                        <option value="">Category1</option>
+                        <option value="">Category2</option>
+                    </select>
+                </div>
+            </div>
+            <div class="custom_tab_content">
+                <div class="accordian_wrapper tab_pane active all_tab_pane mt-[40px]" data-tab="all">
+                    <div class="accordian_item sleeping">
+                        <div class="accordain_header">
+                            <h3
+                                class="text-[#454545] font-bold text-[36px] leading-[43px] flex items-center justify-between mb-[55px]">
+                                Sleeping (8)
+                                <span class="cursor-pointer accordain_icon">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </h3>
+                        </div>
+                        <div class="accordia_body">
+                            <div class="product_card_wrapper flex flex-wrap gap-x-6">
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/sleeping1.png" alt="Sleeping">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/sleeping2.png" alt="Sleeping">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/sleeping3.png" alt="Sleeping">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/sleeping4.png" alt="Sleeping">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/sleeping5.png" alt="Sleeping">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-center gap-x-[10px] mb-5 shop_registry">
+                                        <strong class="text-[#434343] font-bold text-base leading-[19px] ">Shop Registry
+                                            at
+                                        </strong>
+                                        <div class="flex items-center logos">
+                                            <img src="Asstes/ProductListing/amazon.png" width="21" alt="amazon">
+                                            <img class="relative left-[-10px]"
+                                                src="Asstes/ProductListing/corporationLogo.png" width="21"
+                                                alt="corporationLogo">
+                                            <img class="relative left-[-20px]" src="Asstes/ProductListing/walmart.png"
+                                                width="21" alt="walmart">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/sleeping6.png" alt="Sleeping">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-center gap-x-[10px] mb-5 shop_registry">
+                                        <strong class="text-[#434343] font-bold text-base leading-[19px] ">Shop Registry
+                                            at
+                                        </strong>
+                                        <div class="flex items-center logos">
+                                            <img src="Asstes/ProductListing/amazon.png" width="21" alt="amazon">
+                                            <img class="relative left-[-10px]"
+                                                src="Asstes/ProductListing/corporationLogo.png" width="21"
+                                                alt="corporationLogo">
+                                            <img class="relative left-[-20px]" src="Asstes/ProductListing/walmart.png"
+                                                width="21" alt="walmart">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/sleeping7.png" alt="Sleeping">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-center gap-x-[10px] mb-5 shop_registry">
+                                        <strong class="text-[#434343] font-bold text-base leading-[19px] ">Shop Registry
+                                            at
+                                        </strong>
+                                        <div class="flex items-center logos">
+                                            <img src="Asstes/ProductListing/amazon.png" width="21" alt="amazon">
+                                            <img class="relative left-[-10px]"
+                                                src="Asstes/ProductListing/corporationLogo.png" width="21"
+                                                alt="corporationLogo">
+                                            <img class="relative left-[-20px]" src="Asstes/ProductListing/walmart.png"
+                                                width="21" alt="walmart">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordian_item playing">
+                        <div class="accordain_header">
+                            <h3
+                                class="mt-10 text-[#454545] font-bold text-[36px] leading-[43px] flex items-center justify-between mb-[55px]">
+                                Playing (8)
+                                <span class="cursor-pointer accordain_icon">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </h3>
+                        </div>
+                        <div class="accordia_body">
+                            <div class="product_card_wrapper flex flex-wrap gap-x-6">
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/playing1.png" alt="Playing">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/playing2.png" alt="playing">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/playing3.png" alt="playing">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/playing4.png" alt="playing">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/playing5.png" alt="playing">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-center gap-x-[10px] mb-5 shop_registry">
+                                        <strong class="text-[#434343] font-bold text-base leading-[19px] ">Shop Registry
+                                            at
+                                        </strong>
+                                        <div class="flex items-center logos">
+                                            <img src="Asstes/ProductListing/amazon.png" width="21" alt="amazon">
+                                            <img class="relative left-[-10px]"
+                                                src="Asstes/ProductListing/corporationLogo.png" width="21"
+                                                alt="corporationLogo">
+                                            <img class="relative left-[-20px]" src="Asstes/ProductListing/walmart.png"
+                                                width="21" alt="walmart">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/playing6.png" alt="playing">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-center gap-x-[10px] mb-5 shop_registry">
+                                        <strong class="text-[#434343] font-bold text-base leading-[19px] ">Shop Registry
+                                            at
+                                        </strong>
+                                        <div class="flex items-center logos">
+                                            <img src="Asstes/ProductListing/amazon.png" width="21" alt="amazon">
+                                            <img class="relative left-[-10px]"
+                                                src="Asstes/ProductListing/corporationLogo.png" width="21"
+                                                alt="corporationLogo">
+                                            <img class="relative left-[-20px]" src="Asstes/ProductListing/walmart.png"
+                                                width="21" alt="walmart">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/playing7.png" alt="playing">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-center gap-x-[10px] mb-5 shop_registry">
+                                        <strong class="text-[#434343] font-bold text-base leading-[19px] ">Shop Registry
+                                            at
+                                        </strong>
+                                        <div class="flex items-center logos">
+                                            <img src="Asstes/ProductListing/amazon.png" width="21" alt="amazon">
+                                            <img class="relative left-[-10px]"
+                                                src="Asstes/ProductListing/corporationLogo.png" width="21"
+                                                alt="corporationLogo">
+                                            <img class="relative left-[-20px]" src="Asstes/ProductListing/walmart.png"
+                                                width="21" alt="walmart">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordian_item purchased">
+                        <div class="accordain_header">
+                            <h3
+                                class="mt-10 text-[#454545] font-bold text-[36px] leading-[43px] flex items-center justify-between mb-[55px]">
+                                Purchased (8)
+                                <span class="cursor-pointer accordain_icon">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </h3>
+                        </div>
+                        <div class="accordia_body">
+                            <div class="product_card_wrapper flex flex-wrap gap-x-6">
+                                <div class="bg-[#F3F3F3] p-[20px] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/purchased1.png" alt="Purchased">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+
+                                </div>
+                                <div class="bg-[#F3F3F3] p-[20px] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/purchased2.png" alt="Purchased">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+
+                                </div>
+                                <div class="bg-[#F3F3F3] p-[20px] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/purchased3.png" alt="Purchased">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+
+                                </div>
+                                <div class="bg-[#F3F3F3] p-[20px] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/purchased4.png" alt="Purchased">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+
+                                </div>
+                                <div class="bg-[#F3F3F3] p-[20px] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/purchased5.png" alt="Purchased">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+
+                                </div>
+                                <div class="bg-[#F3F3F3] p-[20px] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/purchased6.png" alt="Purchased">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+
+                                </div>
+                                <div class="bg-[#F3F3F3] p-[20px] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/purchased7.png" alt="Purchased">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+
+                                </div>
+                                <div class="bg-[#F3F3F3] p-[20px] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/purchased8.png" alt="Purchased">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordian_wrapper tab_pane sleeping_tab_pane mt-[40px]" data-tab="Sleeping">
+                    <div class="accordian_item sleeping">
+                        <div class="accordain_header">
+                            <h3
+                                class="text-[#454545] font-bold text-[36px] leading-[43px] flex items-center justify-between mb-[55px]">
+                                Sleeping (8)
+                                <span class="cursor-pointer accordain_icon">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </h3>
+                        </div>
+                        <div class="accordia_body">
+                            <div class="product_card_wrapper flex flex-wrap gap-x-6">
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/sleeping1.png" alt="Sleeping">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/sleeping2.png" alt="Sleeping">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/sleeping3.png" alt="Sleeping">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/sleeping4.png" alt="Sleeping">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/sleeping5.png" alt="Sleeping">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-center gap-x-[10px] mb-5 shop_registry">
+                                        <strong class="text-[#434343] font-bold text-base leading-[19px] ">Shop Registry
+                                            at
+                                        </strong>
+                                        <div class="flex items-center logos">
+                                            <img src="Asstes/ProductListing/amazon.png" width="21" alt="amazon">
+                                            <img class="relative left-[-10px]"
+                                                src="Asstes/ProductListing/corporationLogo.png" width="21"
+                                                alt="corporationLogo">
+                                            <img class="relative left-[-20px]" src="Asstes/ProductListing/walmart.png"
+                                                width="21" alt="walmart">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/sleeping6.png" alt="Sleeping">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-center gap-x-[10px] mb-5 shop_registry">
+                                        <strong class="text-[#434343] font-bold text-base leading-[19px] ">Shop Registry
+                                            at
+                                        </strong>
+                                        <div class="flex items-center logos">
+                                            <img src="Asstes/ProductListing/amazon.png" width="21" alt="amazon">
+                                            <img class="relative left-[-10px]"
+                                                src="Asstes/ProductListing/corporationLogo.png" width="21"
+                                                alt="corporationLogo">
+                                            <img class="relative left-[-20px]" src="Asstes/ProductListing/walmart.png"
+                                                width="21" alt="walmart">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/sleeping7.png" alt="Sleeping">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-center gap-x-[10px] mb-5 shop_registry">
+                                        <strong class="text-[#434343] font-bold text-base leading-[19px] ">Shop Registry
+                                            at
+                                        </strong>
+                                        <div class="flex items-center logos">
+                                            <img src="Asstes/ProductListing/amazon.png" width="21" alt="amazon">
+                                            <img class="relative left-[-10px]"
+                                                src="Asstes/ProductListing/corporationLogo.png" width="21"
+                                                alt="corporationLogo">
+                                            <img class="relative left-[-20px]" src="Asstes/ProductListing/walmart.png"
+                                                width="21" alt="walmart">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordian_wrapper tab_pane playing_tab_pane mt-[40px]" data-tab="Playing">
+                    <div class="accordian_item playing">
+                        <div class="accordain_header">
+                            <h3
+                                class="mt-10 text-[#454545] font-bold text-[36px] leading-[43px] flex items-center justify-between mb-[55px]">
+                                Playing (8)
+                                <span class="cursor-pointer accordain_icon">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </h3>
+                        </div>
+                        <div class="accordia_body">
+                            <div class="product_card_wrapper flex flex-wrap gap-x-6">
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/playing1.png" alt="Playing">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/playing2.png" alt="playing">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/playing3.png" alt="playing">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/playing4.png" alt="playing">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/playing5.png" alt="playing">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-center gap-x-[10px] mb-5 shop_registry">
+                                        <strong class="text-[#434343] font-bold text-base leading-[19px] ">Shop Registry
+                                            at
+                                        </strong>
+                                        <div class="flex items-center logos">
+                                            <img src="Asstes/ProductListing/amazon.png" width="21" alt="amazon">
+                                            <img class="relative left-[-10px]"
+                                                src="Asstes/ProductListing/corporationLogo.png" width="21"
+                                                alt="corporationLogo">
+                                            <img class="relative left-[-20px]" src="Asstes/ProductListing/walmart.png"
+                                                width="21" alt="walmart">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/playing6.png" alt="playing">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-center gap-x-[10px] mb-5 shop_registry">
+                                        <strong class="text-[#434343] font-bold text-base leading-[19px] ">Shop Registry
+                                            at
+                                        </strong>
+                                        <div class="flex items-center logos">
+                                            <img src="Asstes/ProductListing/amazon.png" width="21" alt="amazon">
+                                            <img class="relative left-[-10px]"
+                                                src="Asstes/ProductListing/corporationLogo.png" width="21"
+                                                alt="corporationLogo">
+                                            <img class="relative left-[-20px]" src="Asstes/ProductListing/walmart.png"
+                                                width="21" alt="walmart">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/playing7.png" alt="playing">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-center gap-x-[10px] mb-5 shop_registry">
+                                        <strong class="text-[#434343] font-bold text-base leading-[19px] ">Shop Registry
+                                            at
+                                        </strong>
+                                        <div class="flex items-center logos">
+                                            <img src="Asstes/ProductListing/amazon.png" width="21" alt="amazon">
+                                            <img class="relative left-[-10px]"
+                                                src="Asstes/ProductListing/corporationLogo.png" width="21"
+                                                alt="corporationLogo">
+                                            <img class="relative left-[-20px]" src="Asstes/ProductListing/walmart.png"
+                                                width="21" alt="walmart">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordian_wrapper tab_pane health_tab_pane mt-[40px]" data-tab="Health">
+                    <div class="accordian_item playing">
+                        <div class="accordain_header">
+                            <h3
+                                class="mt-10 text-[#454545] font-bold text-[36px] leading-[43px] flex items-center justify-between mb-[55px]">
+                                Health & Safety (1)
+                                <span class="cursor-pointer accordain_icon">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </h3>
+                        </div>
+                        <div class="accordia_body">
+                            <div class="product_card_wrapper flex flex-wrap gap-x-6">
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/playing1.png" alt="Playing">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordian_wrapper tab_pane diaperin_tab_pane mt-[40px]" data-tab="Diapering">
+                    <div class="accordian_item playing">
+                        <div class="accordain_header">
+                            <h3
+                                class="mt-10 text-[#454545] font-bold text-[36px] leading-[43px] flex items-center justify-between mb-[55px]">
+                                Diapering (1)
+                                <span class="cursor-pointer accordain_icon">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </h3>
+                        </div>
+                        <div class="accordia_body">
+                            <div class="product_card_wrapper flex flex-wrap gap-x-6">
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/playing1.png" alt="Playing">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordian_wrapper tab_pane health_tab_pane mt-[40px]" data-tab="Health">
+                    <div class="accordian_item playing">
+                        <div class="accordain_header">
+                            <h3
+                                class="mt-10 text-[#454545] font-bold text-[36px] leading-[43px] flex items-center justify-between mb-[55px]">
+                                Health & Safety (1)
+                                <span class="cursor-pointer accordain_icon">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </h3>
+                        </div>
+                        <div class="accordia_body">
+                            <div class="product_card_wrapper flex flex-wrap gap-x-6">
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/playing1.png" alt="Playing">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordian_wrapper tab_pane sleeping_tab_pane mt-[40px]" data-tab="Sleeping">
+                    <div class="accordian_item sleeping">
+                        <div class="accordain_header">
+                            <h3
+                                class="text-[#454545] font-bold text-[36px] leading-[43px] flex items-center justify-between mb-[55px]">
+                                Sleeping (8)
+                                <span class="cursor-pointer accordain_icon">
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </span>
+                            </h3>
+                        </div>
+                        <div class="accordia_body">
+                            <div class="product_card_wrapper flex flex-wrap gap-x-6">
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/sleeping1.png" alt="Sleeping">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/sleeping2.png" alt="Sleeping">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/sleeping3.png" alt="Sleeping">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/sleeping4.png" alt="Sleeping">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/sleeping5.png" alt="Sleeping">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-center gap-x-[10px] mb-5 shop_registry">
+                                        <strong class="text-[#434343] font-bold text-base leading-[19px] ">Shop Registry
+                                            at
+                                        </strong>
+                                        <div class="flex items-center logos">
+                                            <img src="Asstes/ProductListing/amazon.png" width="21" alt="amazon">
+                                            <img class="relative left-[-10px]"
+                                                src="Asstes/ProductListing/corporationLogo.png" width="21"
+                                                alt="corporationLogo">
+                                            <img class="relative left-[-20px]" src="Asstes/ProductListing/walmart.png"
+                                                width="21" alt="walmart">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/sleeping6.png" alt="Sleeping">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-center gap-x-[10px] mb-5 shop_registry">
+                                        <strong class="text-[#434343] font-bold text-base leading-[19px] ">Shop Registry
+                                            at
+                                        </strong>
+                                        <div class="flex items-center logos">
+                                            <img src="Asstes/ProductListing/amazon.png" width="21" alt="amazon">
+                                            <img class="relative left-[-10px]"
+                                                src="Asstes/ProductListing/corporationLogo.png" width="21"
+                                                alt="corporationLogo">
+                                            <img class="relative left-[-20px]" src="Asstes/ProductListing/walmart.png"
+                                                width="21" alt="walmart">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                                <div class="bg-[#fff] p-[20px]  shadow-[5px_7px_12px_0px_#B4B4B440] product_card">
+                                    <div class="mb-3 img">
+                                        <img src="Asstes/ProductListing/sleeping7.png" alt="Sleeping">
+                                    </div>
+                                    <h3 class="text-[#1E1E1E] mb-2 font-semibold text-sm leading-[17px] ">QUINCY MAE
+                                    </h3>
+                                    <p class="text-[#717171] mb-2 text-base leading-[19px]">Bamboo Crib Sheet</p>
+                                    <span
+                                        class="block text-[#1E1E1E] font-extrabold mb-8 text-sm leading-[17px] prize">CA$59.99</span>
+                                    <button
+                                        class="cursor-pointer mb-[24px] inline-flex items-center justify-center text-white font-bold text-base leading-[19px] gap-x-1 py-[11px] px-4 bg-[#00838F] border border-[#00838F] hover:bg-[white] hover:text-[#00838F] rounded-[100px] w-full add_to_cart">
+                                        <span>
+                                            <i class="fa-solid fa-plus"></i>
+                                        </span>
+                                        Add to Cart
+                                    </button>
+                                    <div class="flex items-center justify-center gap-x-[10px] mb-5 shop_registry">
+                                        <strong class="text-[#434343] font-bold text-base leading-[19px] ">Shop Registry
+                                            at
+                                        </strong>
+                                        <div class="flex items-center logos">
+                                            <img src="Asstes/ProductListing/amazon.png" width="21" alt="amazon">
+                                            <img class="relative left-[-10px]"
+                                                src="Asstes/ProductListing/corporationLogo.png" width="21"
+                                                alt="corporationLogo">
+                                            <img class="relative left-[-20px]" src="Asstes/ProductListing/walmart.png"
+                                                width="21" alt="walmart">
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center justify-between  mark_purchased">
+                                        <div class="flex items-center gap-x-[7px] ">
+                                            <input type="checkbox" id="mark_purchased">
+                                            <label class="text-[#717171] text-sm leading-[17px] "
+                                                for="mark_purchased">Mark
+                                                as Purchased</label>
+                                        </div>
+                                        <span class="text-[#373737] text-xs leading-[14px] ">0 of 1 purchased</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const accordianIcons = document.querySelectorAll(".accordain_icon");
+
+            accordianIcons.forEach(icon => {
+                icon.addEventListener("click", function () {
+                    const accordianItem = icon.closest(".accordian_item");
+                    const accordiaBody = accordianItem.querySelector(".accordia_body");
+                    icon.classList.toggle("active");
+                    if (accordiaBody.style.display === "none" || accordiaBody.style.display === "") {
+                        accordiaBody.style.display = "block";
+                    } else {
+                        accordiaBody.style.display = "none";
+                    }
+                });
+            });
+        });
+
+        // Tabs
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const tabLinks = document.querySelectorAll(".tab_link");
+            const tabPanes = document.querySelectorAll(".tab_pane");
+
+            tabLinks.forEach(link => {
+                link.addEventListener("click", function () {
+                    const tab = this.dataset.tab;
+
+                    // Remove active from all tabs and panes
+                    tabLinks.forEach(l => l.classList.remove("active"));
+                    tabPanes.forEach(p => p.classList.remove("active"));
+
+                    // Activate clicked tab and matching pane
+                    this.classList.add("active");
+                    document.querySelector(`.tab_pane[data-tab="${tab}"]`).classList.add("active");
+                });
+            });
+        });
+
+
+        $(document).ready(function () {
+            $("button.add_to_cart").click(function () {
+                $("body").addClass("modal_open");
+            });
+            $("a.close_modal").click(function () {
+                $("body").removeClass("modal_open");
+            });
+            $("span.other_buying_open").click(function () {
+                $(this).toggleClass("active");
+                $(this).parent().next().toggleClass("active");
+            });
+
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Registry</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body class="!bg-white">
+    <section class="find_registry ">
+        <div class="container">
+            <div class="search_register max-w-[648px] mx-auto text-center py-[86px]">
+                <div class="logo flex items-center justify-center md:mb-[102px] mb-10">
+                    <img src="Asstes/logo.png" alt="Logo">
+                </div>
+                <h1 class="text-[#000000] text-[28px] leading-[34px] mb-[31px]">Find a Baby Registry</h1>
+                <div
+                    class="search border border-[#979797] flex items-center justify-between md:px-[40px] px-3 pr-[20px] py-[14px]">
+                    <input type="text"
+                        class="border-0 text-[#5D5D5D] md:text-base text-sm leading-[19px] w-[95%] placeholder:text-[#5D5D5D] text-base leading-[19px]"
+                        placeholder="Search by first name, last name or registry ID">
+                    <button class="cursor-pointer find_registry_btn">
+                        <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 11L6 6L1 1" stroke="#252525" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="registry_step2">
+            <div class="container">
+                <div class="registry_banner">
+                    <h1>Find a Registry</h1>
+                    <div class="banner_form">
+                        <form action="#">
+                            <input type="text" placeholder="Search by first name, last name or registry ID">
+                            <button>Search</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="breadcrumb">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home /</a>
+                        </li>
+                        <li>
+                            <a href="#">Registry /</a>
+                        </li>
+                        <li>
+                            Find Registry
+                        </li>
+                    </ul>
+                </div>
+                <div class="registry_Products_wrapper">
+                    <div class="registry_Product">
+                        <a href="product-listing.html">
+                            <img src="Asstes/FindRegistry/registryImg1.png" alt="Find Registry">
+                        </a>
+                        <span>Lee’s Baby Registry</span>
+                        <h2>Johnathon & Lee’s Baby Registry</h2>
+                        <p>Apr 27, 2024 | Ontario </p>
+                    </div>
+                    <div class="registry_Product">
+                        <a href="product-listing.html">
+                            <img src="Asstes/FindRegistry/registryImg2.png" alt="Find Registry">
+                        </a>
+                        <span>Lee’s Baby Registry</span>
+                        <h2>Johnathon & Lee’s Baby Registry</h2>
+                        <p>Apr 27, 2024 | Ontario </p>
+                    </div>
+                    <div class="registry_Product">
+                        <a href="product-listing.html">
+                            <div class="outer_circle">
+                                <div class="inner_circle">
+                                    <p>J + M</p>
+                                </div>
+                            </div>
+                        </a>
+                        <span>Lee’s Baby Registry</span>
+                        <h2>Johnathon & Lee’s Baby Registry</h2>
+                        <p>Apr 27, 2024 | Ontario </p>
+                    </div>
+                    <div class="registry_Product">
+                        <a href="product-listing.html">
+                            <img src="Asstes/FindRegistry/registryImg3.png" alt="Find Registry">
+                        </a>
+                        <span>Lee’s Baby Registry</span>
+                        <h2>Johnathon & Lee’s Baby Registry</h2>
+                        <p>Apr 27, 2024 | Ontario </p>
+                    </div>
+                    <div class="registry_Product">
+                        <a href="product-listing.html">
+                            <div class="outer_circle">
+                                <div class="inner_circle">
+                                    <p>J + M</p>
+                                </div>
+                            </div>
+                        </a>
+                        <span>Lee’s Baby Registry</span>
+                        <h2>Johnathon & Lee’s Baby Registry</h2>
+                        <p>Apr 27, 2024 | Ontario </p>
+                    </div>
+                    <div class="registry_Product">
+                        <a href="product-listing.html">
+                            <img src="Asstes/FindRegistry/registryImg4.png" alt="Find Registry">
+                        </a>
+                        <span>Lee’s Baby Registry</span>
+                        <h2>Johnathon & Lee’s Baby Registry</h2>
+                        <p>Apr 27, 2024 | Ontario </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".find_registry_btn").click(function () {
+                $(".registry_step2").show();
+                $(".search_register").hide();
+            });
+        });
+    </script>
+</body>
+
+</html>

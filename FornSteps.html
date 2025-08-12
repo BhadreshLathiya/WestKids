@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <script src="./JS/FornSteps.js" defer></script>
+    <script>
+      // Get the first name from localStorage
+      const firstName = localStorage.getItem("step3");
+
+      // If found, inject it into the span
+      if (firstName) {
+        document.getElementById("userFirstName").textContent =
+          firstName.firstName;
+      }
+    </script>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-[#ffffff]">
+    <section class="h-screen overflow-auto !pt-0 !mt-0 bg-[#ffffff]">
+      <div class="pt-5 sm:block hidden">
+        <div class="w-full h-3 bg-[#e3e3e3] relative">
+          <div
+            id="progressBar"
+            class="bg-[#00a0af] absolute h-full rounded-r-full"
+          ></div>
+        </div>
+      </div>
+      <div class="sm:pt-[60px] pt-[20px]">
+        <img src="./Asstes/Icons/MainLogo.svg" alt="" class="mx-auto" />
+      </div>
+      <div
+        id="step-1"
+        class="h-[calc(100%_-_112px)] w-full flex flex-col justify-start items-center"
+      >
+        <h2
+          class="xl:text-[28px] sm:text-[25px] text-[20px] font-medium text-center sm:leading-[34px] leading-[24px] max-w-[715px] sm:mt-[130px] mt-[70px]"
+        >
+          "We're so glad you're here! Would you like a little help along the
+          way?
+        </h2>
+        <div
+          class="flex sm:flex-row flex-col gap-[35px] justify-center mt-[50px] sm:w-auto w-full px-[50px]"
+        >
+          <div id="Options" class="Options" onclick="step1Ans('yes')">
+            <div class="emptyBox"></div>
+            <div class="textBox">
+              <p
+                class="sm:max-w-[257px] sm:text-[20px] text-[16px] font-semibold text-center"
+              >
+                Yes I need all the help I can get!
+              </p>
+            </div>
+          </div>
+          <div id="Options" class="Options" onclick="step1Ans('no')">
+            <div class="emptyBox"></div>
+            <div class="textBox">
+              <p
+                class="sm:max-w-[257px] sm:text-[20px] text-[16px] font-semibold text-center"
+              >
+                Nope! I've done my research and I’m ready to go !
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="step-2"
+        class="h-[calc(100%_-_112px)] w-full flex flex-col justify-start items-center"
+      >
+        <h2
+          class="xl:text-[28px] sm:text-[25px] text-[20px] font-medium text-center sm:leading-[34px] leading-[24px] max-w-[715px] sm:mt-[100px] mt-[50px]"
+        >
+          "We're so glad you're here! Would you like a little help along the
+          way?
+        </h2>
+        <div class="flex flex-col mt-[50px] gap-[15px] sm:w-auto w-full">
+          <div id="optionA" class="questionOption" onclick="step2Ans('A')">
+            <div class="checkMark">
+              <img
+                src="./Asstes/Icons/CheckMark.svg"
+                alt="CheckMark"
+                class="xl:h-auto"
+              />
+            </div>
+            <p
+              class="sm:max-w-[257px] sm:text-[22px] text-[14px] sm:py-0 py-5 sm:font-medium font-semibold text-center"
+            >
+              I live in the city and I take public transport
+            </p>
+          </div>
+          <div id="optionB" class="questionOption" onclick="step2Ans('B')">
+            <div class="checkMark">
+              <img src="./Asstes/Icons/CheckMark.svg" alt="CheckMark" />
+            </div>
+            <p
+              class="sm:max-w-[257px] sm:text-[22px] text-[14px] sm:py-0 py-5 sm:font-medium font-semibold text-center"
+            >
+              I live in the city and I drive a car
+            </p>
+          </div>
+          <div id="optionC" class="questionOption" onclick="step2Ans('C')">
+            <div class="checkMark">
+              <img src="./Asstes/Icons/CheckMark.svg" alt="CheckMark" />
+            </div>
+            <p
+              class="sm:max-w-[257px] sm:text-[22px] text-[14px] sm:py-0 py-5 sm:font-medium font-semibold text-center"
+            >
+              I live in the suburbs
+            </p>
+          </div>
+          <div id="optionD" class="questionOption" onclick="step2Ans('D')">
+            <div class="checkMark">
+              <img src="./Asstes/Icons/CheckMark.svg" alt="CheckMark" />
+            </div>
+            <p
+              class="sm:max-w-[257px] sm:text-[22px] text-[14px] sm:py-0 py-5 sm:font-medium font-semibold text-center"
+            >
+              I live somewhere rural
+            </p>
+          </div>
+          <div>
+            <p
+              onclick="step2Ans('skip')"
+              class="sm:text-[22px] text-[16px] font-medium text-center cursor-pointer"
+            >
+              Skip
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        id="step-3"
+        class="h-[calc(100%_-_112px)] w-full flex flex-col sm:justify-between items-center relative bg-white"
+      >
+        <div class="z-[1] bg-white">
+          <h2
+            class="xl:text-[28px] sm:text-[25px] text-[20px] font-medium text-center sm:leading-[34px] leading-[24px] max-w-[715px] mt-[130px]"
+          >
+            "We're so glad you're here! Would you like a little help along the
+            way?
+          </h2>
+          <div class="flex sm:flex-row flex-col gap-5 mt-[50px] items-center">
+            <input
+              type="text"
+              placeholder="First Name"
+              class="w-full max-w-xs px-4 py-2 border border-gray-400 text-gray-700 placeholder-gray-500 focus:outline-none focus:!border-[1px]"
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              class="w-full max-w-xs px-4 py-2 border border-gray-400 text-gray-700 placeholder-gray-500 focus:outline-none focus:!border-[1px]"
+            />
+          </div>
+          <div class="flex justify-center mt-[40px]">
+            <button
+              class="btn primary step-primary rounded-full text-[20px] font-black w-[250px]"
+              onclick="step3Ans()"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+        <img
+          src="./Asstes/ExploreBackground.png"
+          alt=""
+          class="w-full absolute bottom-0 sm:block hidden"
+        />
+      </div>
+      <div
+        id="step-4"
+        class="h-[calc(100%_-_112px)] w-full flex flex-col justify-between items-center relative"
+      >
+        <div class="z-[1] bg-white">
+          <h2
+            class="xl:text-[28px] sm:text-[25px] text-[20px] font-medium text-center sm:leading-[34px] leading-[24px] max-w-[715px] sm:mt-[130px] mt-[70px]"
+          >
+            "Thanks, <span id="userFirstName"></span>, what do you consider most
+            when making a purchase?"
+          </h2>
+          <div class="flex flex-col mt-[50px] gap-[15px] items-center">
+            <div
+              id="optionA"
+              class="questionOption sm:!w-[545px]"
+              onclick="step4Ans('A')"
+            >
+              <div class="checkMark">
+                <img src="./Asstes/Icons/CheckMark.svg" alt="CheckMark" />
+              </div>
+              <p
+                class="sm:text-[22px] text-[14px] sm:py-0 py-5 sm:font-medium font-semibold text-center"
+              >
+                I want to know about the latest and greatest products, and I am
+                willing to splurge!
+              </p>
+            </div>
+            <div
+              id="optionB"
+              class="questionOption sm:!w-[545px]"
+              onclick="step4Ans('B')"
+            >
+              <div class="checkMark">
+                <img src="./Asstes/Icons/CheckMark.svg" alt="CheckMark" />
+              </div>
+              <p
+                class="sm:text-[22px] text-[14px] sm:py-0 py-5 sm:font-medium font-semibold text-center"
+              >
+                I want the best value, and the most practical products and the
+                biggest bang for my buck!
+              </p>
+            </div>
+            <div>
+              <p
+                onclick="step4Ans('skip')"
+                class="sm:text-[22px] text-[16px] font-medium text-center cursor-pointer"
+              >
+                Skip
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./Asstes/ExploreBackground.png"
+          alt=""
+          class="w-full absolute bottom-0 sm:block hidden"
+        />
+      </div>
+      <div
+        id="step-5"
+        class="h-[calc(100%_-_112px)] w-full flex flex-col justify-between items-center relative"
+      >
+        <div class="z-[1] bg-white p-2">
+          <h2
+            class="xl:text-[28px] sm:text-[25px] text-[20px] font-medium text-center sm:leading-[34px] leading-[24px] max-w-[715px] sm:mt-[130px] mt-[70px]"
+          >
+            "We're so glad you're here! Would you like a little help along the
+            way?
+          </h2>
+          <div class="flex gap-5 mt-[50px]">
+            <input
+              type="email"
+              placeholder="Email"
+              class="w-full px-4 py-2 border border-gray-400 text-gray-700 placeholder-gray-500 focus:outline-none focus:!border-[1px]"
+            />
+          </div>
+          <div class="flex justify-center items-center mt-[40px] gap-[40px]">
+            <div>
+              <p
+                onclick="step5Ans('skip')"
+                class="sm:text-[22px] text-[14px] font-medium text-center sm:py-0 py-5 cursor-pointer"
+              >
+                Skip
+              </p>
+            </div>
+
+            <button
+              class="btn primary step-primary rounded-full text-[20px] font-black w-[150px]"
+              onclick="step5Ans()"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+        <img
+          src="./Asstes/ExploreBackground.png"
+          alt=""
+          class="w-full absolute bottom-0 sm:block hidden"
+        />
+      </div>
+      <div
+        id="step-6"
+        class="h-[calc(100%_-_112px)] w-full flex flex-col justify-between items-center relative"
+      >
+        <div class="z-[1]">
+          <h2
+            class="xl:text-[28px] sm:text-[25px] text-[20px] font-medium text-center sm:leading-[34px] leading-[24px] max-w-[715px] mt-[30px]"
+          >
+            "Last, describe your personal style"
+          </h2>
+          <div class="flex flex-col mt-[50px] gap-[15px] items-center">
+            <div
+              id="optionA"
+              class="questionOption sm:!w-[545px]"
+              onclick="step6Ans('A')"
+            >
+              <div class="checkMark">
+                <img src="./Asstes/Icons/CheckMark.svg" alt="CheckMark" />
+              </div>
+              <p
+                class="sm:text-[22px] text-[14px] font-medium text-center sm:py-0 py-5"
+              >
+                "Plugged in and tuned to the latest tech"
+              </p>
+            </div>
+            <div
+              id="optionB"
+              class="questionOption sm:!w-[545px]"
+              onclick="step6Ans('B')"
+            >
+              <div class="checkMark">
+                <img src="./Asstes/Icons/CheckMark.svg" alt="CheckMark" />
+              </div>
+              <p
+                class="sm:text-[22px] text-[14px] font-medium text-center sm:py-0 py-5"
+              >
+                "Passport in-hand, adventure on my mind"
+              </p>
+            </div>
+            <div
+              id="optionC"
+              class="questionOption sm:!w-[545px]"
+              onclick="step6Ans('C')"
+            >
+              <div class="checkMark">
+                <img src="./Asstes/Icons/CheckMark.svg" alt="CheckMark" />
+              </div>
+              <p
+                class="sm:text-[22px] text-[14px] font-medium text-center sm:py-0 py-5"
+              >
+                "Nature is my happy place"
+              </p>
+            </div>
+            <div
+              id="optionD"
+              class="questionOption sm:!w-[545px]"
+              onclick="step6Ans('D')"
+            >
+              <div class="checkMark">
+                <img src="./Asstes/Icons/CheckMark.svg" alt="CheckMark" />
+              </div>
+              <p
+                class="sm:text-[22px] text-[14px] font-medium text-center sm:py-0 py-5"
+              >
+                "Living for luxe and loving the latest trends"
+              </p>
+            </div>
+            <div
+              id="optionE"
+              class="questionOption sm:!w-[545px]"
+              onclick="step6Ans('E')"
+            >
+              <div class="checkMark">
+                <img src="./Asstes/Icons/CheckMark.svg" alt="CheckMark" />
+              </div>
+              <p
+                class="sm:text-[22px] text-[14px] font-medium text-center sm:py-0 py-5"
+              >
+                "Running on coffee and good deals!"
+              </p>
+            </div>
+            <div>
+              <p
+                onclick="step6Ans('skip')"
+                class="sm:text-[22px] text-[14px] font-medium text-center sm:py-0 py-5 cursor-pointer"
+              >
+                Skip
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="step-7"
+        class="h-[calc(100%_-_112px)] w-full flex flex-col justify-between items-center relative"
+      >
+        <div class="z-[1]">
+          <h2
+            class="xl:text-[28px] sm:text-[25px] text-[20px] font-medium text-center sm:leading-[34px] leading-[24px] max-w-[715px] mt-[130px]"
+          >
+            We're so glad to get to know you better, Tech Enthusiast! Is someone
+            else joining you on this adventure?
+          </h2>
+          <div class="flex flex-col mt-[50px] gap-[15px] items-center">
+            <div
+              id="optionA"
+              class="questionOption sm:!w-[545px] flex items-center !justify-start gap-4 p-4 border border-gray-400 rounded cursor-pointer"
+            >
+              <input
+                id="a"
+                type="radio"
+                name="step4Option"
+                value="A"
+                class="w-5 h-5 accent-[#00838F] cursor-pointer"
+              />
+              <label class="sm:text-[22px] text-[14px] font-medium" for="a">
+                "It's me and my mini, taking on the world!"
+              </label>
+            </div>
+
+            <div
+              id="optionB"
+              class="questionOption sm:!w-[545px] flex flex-col !items-center gap-4 p-4 py-[40px] border border-gray-400 rounded cursor-pointer mt-4"
+            >
+              <div class="flex items-center justify-starts w-full gap-4">
+                <input
+                  id="b"
+                  type="radio"
+                  name="step4Option"
+                  value="B"
+                  class="w-5 h-5 accent-[#00838F] cursor-pointer"
+                />
+                <label class="sm:text-[22px] text-[14px] font-medium" for="b"
+                  >Yes</label
+                >
+              </div>
+              <div id="bExtraInput" style="display: none">
+                <input
+                  type="text"
+                  placeholder="Partner's First Name"
+                  class="w-full px-4 py-2 border border-gray-400 text-gray-700 placeholder-gray-500 focus:outline-none focus:!border-[1px] bg-white"
+                />
+                <input
+                  type="text"
+                  placeholder="Partner's Last Name"
+                  class="w-full px-4 py-2 border border-gray-400 text-gray-700 placeholder-gray-500 focus:outline-none focus:!border-[1px] mt-5 bg-white"
+                />
+              </div>
+            </div>
+
+            <div class="flex justify-center items-center mt-[40px] gap-[40px]">
+              <button
+                class="btn primary step-primary rounded-full text-[20px] font-black w-[150px]"
+                onclick="step7Ans()"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="step-8"
+        class="h-[calc(100%_-_112px)] w-full flex flex-col justify-start items-center"
+      >
+        <div
+          class="bg-white p-2 z-[1] flex flex-col justify-start items-center"
+        >
+          <h2
+            class="xl:text-[28px] sm:text-[25px] text-[20px] font-medium text-center sm:leading-[34px] leading-[24px] max-w-[715px] mt-[100px] z-[1]"
+          >
+            "Just one last detail to help us recommend the best products for you
+            and your home."
+          </h2>
+          <div class="flex flex-col mt-[50px] gap-[15px] z-[1]">
+            <div id="optionA" class="questionOption" onclick="step8Ans('A')">
+              <div class="checkMark">
+                <img src="./Asstes/Icons/CheckMark.svg" alt="CheckMark" />
+              </div>
+              <p
+                class="sm:text-[22px] text-[14px] font-medium text-center sm:py-0 py-5"
+              >
+                I live in a house with lots of space
+              </p>
+            </div>
+            <div id="optionB" class="questionOption" onclick="step8Ans('B')">
+              <div class="checkMark">
+                <img src="./Asstes/Icons/CheckMark.svg" alt="CheckMark" />
+              </div>
+              <p
+                class="sm:text-[22px] text-[14px] font-medium text-center sm:py-0 py-5"
+              >
+                I live in a more compact space like an apartment or condo
+              </p>
+            </div>
+            <div>
+              <p
+                onclick="step8Ans('skip')"
+                class="sm:text-[22px] text-[14px] font-medium text-center sm:py-0 py-5 cursor-pointer"
+              >
+                Skip
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./Asstes/ExploreBackground.png"
+          alt=""
+          class="w-full absolute bottom-0 sm:block hidden"
+        />
+      </div>
+      <div
+        id="step-9"
+        class="h-[calc(100%_-_112px)] w-full flex flex-col justify-between items-center relative"
+      >
+        <div class="z-[1] bg-white p-2">
+          <h2
+            class="xl:text-[28px] sm:text-[25px] text-[20px] font-medium text-center sm:leading-[34px] leading-[24px] max-w-[715px] sm:mt-[130px] mt-[70px]"
+          >
+            "Great! We'll make sure to include some product recommendations to
+            fit your space. <br /><br />
+            When are you expecting to welcome baby home?"
+          </h2>
+          <div class="flex gap-5 mt-[50px]">
+            <input
+              type="date"
+              placeholder="First Name"
+              class="w-full px-4 py-2 border border-gray-400 text-gray-700 placeholder-gray-500 focus:outline-none focus:!border-[1px]"
+            />
+          </div>
+          <div class="flex justify-center items-center mt-[40px] gap-[18px]">
+            <button
+              class="btn secondary rounded-full sm:text-[20px] text-[14px] sm:font-black sm:w-[250px] w-[150px]"
+              onclick="step9Ans('skip')"
+            >
+              Not sure yet
+            </button>
+            <button
+              class="btn primary step-primary rounded-full sm:text-[20px] text-[14px] sm:font-black sm:w-[250px] w-[150px]"
+              onclick="step9Ans()"
+            >
+              Next
+            </button>
+          </div>
+        </div>
+        <img
+          src="./Asstes/ExploreBackground.png"
+          alt=""
+          class="w-full absolute bottom-0 sm:block hidden"
+        />
+      </div>
+      <div
+        id="step-10"
+        class="h-[calc(100%_-_112px)] w-full flex flex-col justify-between items-center relative"
+      >
+        <div class="z-[1]">
+          <h2
+            class="xl:text-[28px] sm:text-[25px] text-[20px] font-medium text-center sm:leading-[34px] leading-[24px] max-w-[715px] mt-[130px]"
+          >
+            "Let's party! Do you have a special event planned for baby?"
+          </h2>
+          <div class="flex flex-col mt-[50px] gap-[15px] items-center">
+            <div
+              id="optionA"
+              class="questionOption sm:!w-[545px] !w-[90%] flex items-center !justify-start gap-4 p-4 border border-gray-400 rounded cursor-pointer"
+            >
+              <input
+                id="c"
+                type="radio"
+                name="step10Option"
+                value=""
+                class="w-5 h-5 accent-[#00838F] cursor-pointer"
+              />
+              <label class="sm:text-[22px] text-[14px] font-medium" for="c">
+                No
+              </label>
+            </div>
+
+            <div
+              id="optionB"
+              class="questionOption sm:!w-[545px] !w-[90%] flex flex-col !items-center gap-4 p-4 py-[40px] border border-gray-400 rounded cursor-pointer"
+            >
+              <div class="flex items-center justify-starts w-full gap-4">
+                <input
+                  id="d"
+                  type="radio"
+                  name="step10Option"
+                  value="B"
+                  class="w-5 h-5 accent-[#00838F] cursor-pointer"
+                />
+                <label class="sm:text-[22px] text-[14px] font-medium" for="d"
+                  >Yes</label
+                >
+              </div>
+              <div id="extra2InputDiv" style="display: none" class="w-full">
+                <input
+                  type="date"
+                  placeholder="Partner's First Name"
+                  class="w-full px-4 py-2 border border-gray-400 text-gray-700 placeholder-gray-500 focus:outline-none focus:!border-[1px] bg-white"
+                />
+              </div>
+            </div>
+
+            <div class="flex justify-center items-center mt-[40px] gap-[40px]">
+              <button
+                class="btn primary step-primary rounded-full text-[20px] sm:font-black w-[150px]"
+                onclick="step10Ans()"
+              >
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
