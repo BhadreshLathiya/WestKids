@@ -3644,11 +3644,9 @@ button {
 .main_wrapper_inner .dropdown_toggle_wrapper h3 span {
     cursor: pointer;
 }
-.left_sidebar {}
-
 .left_sidebar .register_link {
     margin-top: 30px;
-    margin-bottom: 22px;
+    margin-bottom: 30px;
     padding-bottom: 30px;
     border-bottom: 1px solid #DCDCDC !important;
 }
@@ -3715,7 +3713,9 @@ button {
     justify-content: space-between;
     align-items: flex-start;
 }
-
+.left_sidebar .gift_cards .gift_card_item:last-child {
+    margin-bottom: 0;
+}
 .left_sidebar .gift_cards .gift_card_item h4 {
     color: #1E1E1E !important;
     font-family: Lato !important;
@@ -3743,10 +3743,11 @@ button {
     font-weight: 600;
     font-size: 12px;
     line-height: 14px;
+    margin-top: 8px;
 }
 
 .sidebar_menus.menu_2 {
-    border: 0;
+    border: 0 !important;
     padding: 0;
     margin: 0;
 }
@@ -3989,6 +3990,16 @@ button {
 
 .bottom_banner_wrapper .banner_img {
     margin: 0 -40px;
+}
+.product_listing_wrapper .product_card:hover {
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+
+.product_listing_wrapper .product_card {
+    box-shadow: none;
+}
+.left_sidebar .sidebar_menus li:last-child {
+    margin-bottom: 0;
 }
 /* End Registry Creator */
 
