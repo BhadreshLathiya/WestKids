@@ -4034,8 +4034,8 @@ button {
 }
 
 .registry_creator_explore_products_banner .banner_text h3 {
-  color: #282828;
-  font-family: Lato;
+  color: #282828 !important;
+  font-family: Lato !important;
   font-weight: 700;
   font-size: 36px;
   line-height: 43px;
@@ -4043,8 +4043,8 @@ button {
 }
 
 .registry_creator_explore_products_banner .banner_text p {
-  color: #323232;
-  font-family: Lato;
+  color: #323232 !important;
+  font-family: Lato !important;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
@@ -4063,16 +4063,16 @@ button {
 
 .exclusive_products_text h3 {
   margin-bottom: 20px;
-  color: #282828;
-  font-family: Lato;
+  color: #282828 !important;
+  font-family: Lato !important;
   font-weight: 700;
   font-size: 32px;
   line-height: 38px;
 }
 
 .exclusive_products_text p {
-  color: #323232;
-  font-family: Lato;
+  color: #323232 !important;
+  font-family: Lato !important;
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
